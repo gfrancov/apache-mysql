@@ -1,5 +1,9 @@
 # Docker amb Apache  + Mariadb
 
+## Creació de la imatge
+Dins del directori construim el docker image:
+`docker build -t apachemysql ./`
+
 ## Startup del docker
 Per crear el docker utilitzem la següent comanda:
 `docker run -dit --name apachemysql -p 8080:80 -p 3306:3306 -v /var/www/html:/var/www/html apachemysql`
